@@ -16,7 +16,12 @@ class ResourcesViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func testsLink(_ sender: Any) {
+        if let url = NSURL(string: "https://screening.mhanational.org/screening-tools"){
+               UIApplication.sharedApplication.openURL(as URL)
+           }
+    }
+    
     /*
     // MARK: - Navigation
 
