@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pL2-0f-FCL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -22,19 +22,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cp1-ZS-7rf">
+                                <rect key="frame" x="96" y="368" width="222" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPD-Mj-Ltg">
-                                <rect key="frame" x="138" y="548" width="118" height="58"/>
+                                <rect key="frame" x="148" y="484" width="118" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="W28-hK-Tnr" kind="show" id="q0I-in-aZd"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="WSn-ym-50v"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,7 +49,7 @@
             <objects>
                 <viewController title="Let's Get Started" id="W28-hK-Tnr" customClass="HomeViewController" customModule="healthApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AYc-KD-FCK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where do you want to start?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJw-Ip-ahq">
@@ -76,35 +80,52 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Contact a professional or help center"/>
                                 <connections>
-                                    <segue destination="fuh-d4-z92" kind="show" id="IIE-xc-ezY"/>
+                                    <segue destination="o6v-Xc-rk1" kind="show" id="IIE-xc-ezY"/>
                                 </connections>
                             </button>
                             <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ItQ-Pf-7Bv">
-                                <rect key="frame" x="0.0" y="759" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem title="Home" image="star.fill" catalog="system" id="oEd-OK-Q0b"/>
-                                    <tabBarItem title="Resources" id="iIP-JJ-kTK"/>
-                                    <tabBarItem title="Contacts" image="circle.fill" catalog="system" id="Ngb-fp-vAK"/>
-                                </items>
+                                <items/>
                             </tabBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="m8S-2s-GaL"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="bookmark.fill" catalog="system" id="kpZ-Tj-oV1"/>
                     <navigationItem key="navigationItem" id="Lqr-aI-A5d"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b2Q-FI-K6B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="847.82608695652175" y="114.50892857142857"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="AHM-gZ-1dE">
+            <objects>
+                <tabBarController id="pL2-0f-FCL" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CoM-RL-tbC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="sPh-hJ-KAM"/>
+                        <segue destination="W28-hK-Tnr" kind="relationship" relationship="viewControllers" id="cec-1M-hzI"/>
+                        <segue destination="o6v-Xc-rk1" kind="relationship" relationship="viewControllers" id="6t8-hy-58k"/>
+                        <segue destination="7Qw-wN-2vG" kind="relationship" relationship="viewControllers" id="r0r-N5-M4b"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B53-Sh-jAJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-514" y="800"/>
+        </scene>
         <!--Resources-->
         <scene sceneID="bDf-Zt-0CI">
             <objects>
                 <viewController title="Resources" id="7Qw-wN-2vG" customClass="ResourcesViewController" customModule="healthApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8wK-T9-tJi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resources" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNZ-6q-GT1">
@@ -134,20 +155,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="od5-Mb-lUC">
-                                <rect key="frame" x="0.0" y="759" width="414" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem systemItem="favorites" id="SIa-qg-N05"/>
-                                    <tabBarItem title="Item" id="l6T-un-XZ9"/>
-                                    <tabBarItem systemItem="more" id="qhh-6v-0Vm"/>
-                                </items>
-                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="00v-8V-yHR"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="person.circle.fill" catalog="system" id="N95-zR-O9G"/>
                     <navigationItem key="navigationItem" id="gJ5-te-kGQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3XZ-UT-5S1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -159,7 +171,7 @@
             <objects>
                 <viewController title="Contact " id="fuh-d4-z92" customClass="ContactsViewController" customModule="healthApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t89-41-kPb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact Professionals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCJ-e0-axu">
@@ -170,14 +182,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AXa-c3-DDJ">
-                                <rect key="frame" x="0.0" y="759" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem systemItem="favorites" id="yAM-vJ-88C"/>
-                                    <tabBarItem title="Item" id="R9f-g5-tDw"/>
-                                    <tabBarItem systemItem="more" id="EQ5-Xk-htn"/>
-                                </items>
+                                <items/>
                             </tabBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EMERGENCY" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pg9-Mg-0H6">
                                 <rect key="frame" x="157" y="125" width="102" height="29"/>
@@ -236,11 +244,50 @@ Available: 24/7</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l2k-fy-IJ6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2526.0869565217395" y="114.50892857142857"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VLX-kh-zMN">
+            <objects>
+                <viewController id="Hy9-Rb-VD4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VNy-VA-2LS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Dzd-NI-OfD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jpF-yy-xDV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3286" y="114"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="jBk-Xe-J22">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o6v-Xc-rk1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Nhi-I7-ayE"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="cJq-ht-L1a"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YLW-yA-VgF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fuh-d4-z92" kind="relationship" relationship="rootViewController" id="dmj-06-mve"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E0D-LC-z4k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="1615.9420289855075" y="114.50892857142857"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6t8-hy-58k"/>
+        <segue reference="r0r-N5-M4b"/>
+    </inferredMetricsTieBreakers>
     <resources>
-        <image name="circle.fill" catalog="system" width="128" height="121"/>
-        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="bookmark.fill" catalog="system" width="112" height="128"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
     </resources>
 </document>
