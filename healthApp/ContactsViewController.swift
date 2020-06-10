@@ -16,11 +16,11 @@ class ContactsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func callMe(_ sender: Any) {
+    @IBAction func call911(_ sender: Any) {
         
-    if let phoneURL = NSURL(string: ("tel://" + "4044226144")) {
+    if let phoneURL = NSURL(string: ("tel://" + "911")) {
 
-            let alert = UIAlertController(title: ("Call " + "4044226144" + "?"), message: nil, preferredStyle: .alert)
+            let alert = UIAlertController(title: ("Call " + "911" + "?"), message: nil, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Call", style: .default, handler: { (action) in
                 UIApplication.shared.open(phoneURL as URL, options: [:], completionHandler: nil)
             }))
@@ -29,7 +29,21 @@ class ContactsViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
         }
     }
+    @IBAction func callNSPL(_ sender: Any) {
+        
+        if let phoneURL = NSURL(string: ("tel://" + "18002738255")) {
 
+                let alert = UIAlertController(title: ("Call " + "18002738255" + "?"), message: nil, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Call", style: .default, handler: { (action) in
+                    UIApplication.shared.open(phoneURL as URL, options: [:], completionHandler: nil)
+                }))
+
+                alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
+        
+    }
+    
     /*
     // MARK: - Navigation
 
