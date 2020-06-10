@@ -17,6 +17,8 @@
 		AED814AD248FFCB100D8230A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AED814AB248FFCB100D8230A /* LaunchScreen.storyboard */; };
 		AED814B8248FFCB100D8230A /* healthAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED814B7248FFCB100D8230A /* healthAppTests.swift */; };
 		AED814C3248FFCB100D8230A /* healthAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED814C2248FFCB100D8230A /* healthAppUITests.swift */; };
+		AED814D32491231800D8230A /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED814D22491231800D8230A /* ContactsViewController.swift */; };
+		AED814D52491235000D8230A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED814D42491235000D8230A /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		AED814BE248FFCB100D8230A /* healthAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = healthAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED814C2248FFCB100D8230A /* healthAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = healthAppUITests.swift; sourceTree = "<group>"; };
 		AED814C4248FFCB100D8230A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AED814D22491231800D8230A /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		AED814D42491235000D8230A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 				AED814A1248FFCAE00D8230A /* ViewController.swift */,
 				AED814A3248FFCAE00D8230A /* Main.storyboard */,
 				02CE00CF249074DB00BACC6A /* ResourcesViewController.swift */,
+				AED814D22491231800D8230A /* ContactsViewController.swift */,
+				AED814D42491235000D8230A /* HomeViewController.swift */,
 				AED814A9248FFCB100D8230A /* Assets.xcassets */,
 				AED814AB248FFCB100D8230A /* LaunchScreen.storyboard */,
 				AED814AE248FFCB100D8230A /* Info.plist */,
@@ -270,6 +276,8 @@
 				AED814A8248FFCAE00D8230A /* healthApp.xcdatamodeld in Sources */,
 				AED8149E248FFCAE00D8230A /* AppDelegate.swift in Sources */,
 				AED814A0248FFCAE00D8230A /* SceneDelegate.swift in Sources */,
+				AED814D52491235000D8230A /* HomeViewController.swift in Sources */,
+				AED814D32491231800D8230A /* ContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

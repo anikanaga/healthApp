@@ -43,7 +43,7 @@
         <!--Let's Get Started-->
         <scene sceneID="LLn-F1-1hD">
             <objects>
-                <viewController title="Let's Get Started" id="W28-hK-Tnr" sceneMemberID="viewController">
+                <viewController title="Let's Get Started" id="W28-hK-Tnr" customClass="HomeViewController" customModule="healthApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AYc-KD-FCK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,6 +79,16 @@
                                     <segue destination="fuh-d4-z92" kind="show" id="IIE-xc-ezY"/>
                                 </connections>
                             </button>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ItQ-Pf-7Bv">
+                                <rect key="frame" x="0.0" y="759" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Home" image="star.fill" catalog="system" id="oEd-OK-Q0b"/>
+                                    <tabBarItem title="Resources" id="iIP-JJ-kTK"/>
+                                    <tabBarItem title="Contacts" image="circle.fill" catalog="system" id="Ngb-fp-vAK"/>
+                                </items>
+                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="m8S-2s-GaL"/>
@@ -92,7 +102,7 @@
         <!--Resources-->
         <scene sceneID="bDf-Zt-0CI">
             <objects>
-                <viewController title="Resources" id="7Qw-wN-2vG" sceneMemberID="viewController">
+                <viewController title="Resources" id="7Qw-wN-2vG" customClass="ResourcesViewController" customModule="healthApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8wK-T9-tJi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,6 +134,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="od5-Mb-lUC">
+                                <rect key="frame" x="0.0" y="759" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="SIa-qg-N05"/>
+                                    <tabBarItem title="Item" id="l6T-un-XZ9"/>
+                                    <tabBarItem systemItem="more" id="qhh-6v-0Vm"/>
+                                </items>
+                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="00v-8V-yHR"/>
@@ -137,7 +157,7 @@
         <!--Contact -->
         <scene sceneID="8ms-if-LO5">
             <objects>
-                <viewController title="Contact " id="fuh-d4-z92" sceneMemberID="viewController">
+                <viewController title="Contact " id="fuh-d4-z92" customClass="ContactsViewController" customModule="healthApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t89-41-kPb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -149,6 +169,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AXa-c3-DDJ">
+                                <rect key="frame" x="0.0" y="759" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="yAM-vJ-88C"/>
+                                    <tabBarItem title="Item" id="R9f-g5-tDw"/>
+                                    <tabBarItem systemItem="more" id="EQ5-Xk-htn"/>
+                                </items>
+                            </tabBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pg9-Mg-0H6">
+                                <rect key="frame" x="156" y="139" width="102" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">EMERGENCY
+911</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmn-Af-TQX">
+                                <rect key="frame" x="162" y="258" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="4044226144"/>
+                                <connections>
+                                    <action selector="callMe:" destination="fuh-d4-z92" eventType="touchUpInside" id="gED-2d-QsM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Oy9-ox-MiN"/>
@@ -160,4 +207,8 @@
             <point key="canvasLocation" x="1615.9420289855075" y="114.50892857142857"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+    </resources>
 </document>
