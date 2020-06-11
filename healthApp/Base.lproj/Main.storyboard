@@ -134,7 +134,6 @@
         <!--Resources-->
         <scene sceneID="bDf-Zt-0CI">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3XZ-UT-5S1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController title="Resources" id="7Qw-wN-2vG" customClass="ResourcesViewController" customModule="healthApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8wK-T9-tJi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -169,18 +168,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4i-hI-CjR">
-                                <rect key="frame" x="82" y="171" width="250" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="https://screening.mhanational.org/screening-tools"/>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="https://screening.mhanational.org/screening-tools" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MvF-3Q-jA5">
-                                <rect key="frame" x="82" y="205" width="240" height="128"/>
+                                <rect key="frame" x="81" y="181" width="240" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="https://www.google.com" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PSw-QI-mmO">
+                                <rect key="frame" x="68" y="268" width="240" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.78498321370000002" green="0.91317713440000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -193,6 +196,7 @@
                         <outlet property="sample" destination="8wK-T9-tJi" id="5v7-vK-MYs"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3XZ-UT-5S1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="847.82608695652175" y="799.55357142857144"/>
         </scene>
