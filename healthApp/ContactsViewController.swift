@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import ContactsUI
 
-class ContactsViewController: UIViewController {
+class ContactsViewController: UIViewController , CNContactPickerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+       self.lblNumber.text = ""
 
         // Do any additional setup after loading the view.
     }
@@ -61,7 +63,37 @@ class ContactsViewController: UIViewController {
     }
     
     
-   
+    
+    
+    @IBOutlet weak var lblNumber: UILabel!
+    
+    
+    
+    
+    @IBAction func show(_ sender: Any) {
+        let contacVC = CNContactPickerViewController()
+               contacVC.delegate = self
+               self.present(contacVC, animated: true, completion: nil)
+    }
+    
+     // MARK: Delegate method CNContectPickerDelegate
+        func contactPicker(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
+            print(contact.phoneNumbers)
+            let numbers = contact.phoneNumbers.first
+            print((numbers?.value)?.stringValue ?? "")
+            
+            self.lblNumber.text = " Contact No. \((numbers?.value)?.stringValue ?? "")"
+            
+            
+        }
+        func contactPickerDidCancel(_ picker: CNContactPickerViewController) {
+            self.dismiss(animated: true, completion: nil)
+        }
+     
+     
+    }
+     
+
 
  
     
@@ -79,4 +111,4 @@ class ContactsViewController: UIViewController {
     }
     */
 
-}
+
