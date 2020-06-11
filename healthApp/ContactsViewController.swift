@@ -62,14 +62,10 @@ class ContactsViewController: UIViewController , CNContactPickerDelegate {
         
     }
     
-    
+    // Add contacts ------------------------------------
     
     
     @IBOutlet weak var lblNumber: UILabel!
-    
-    
-    
-    
     @IBAction func show(_ sender: Any) {
         let contacVC = CNContactPickerViewController()
                contacVC.delegate = self
@@ -84,55 +80,51 @@ class ContactsViewController: UIViewController , CNContactPickerDelegate {
             
             self.lblNumber.text = " Contact No. \((numbers?.value)?.stringValue ?? "")"
             
-            
         }
         func contactPickerDidCancel(_ picker: CNContactPickerViewController) {
             self.dismiss(animated: true, completion: nil)
         }
      
-     
+     //------------------------------------------------
     
+   
     @IBOutlet weak var numberTwo: UILabel!
-    
     @IBAction func contact2(_ sender: Any) {
         let contacVC = CNContactPickerViewController()
                       contacVC.delegate = self
                       self.present(contacVC, animated: true, completion: nil)
-           }
+    }
            
-            // MARK: Delegate method CNContectPickerDelegate
-              func contactPickerTwo(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
+      
+    private func contactPickerTwo(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
+                   print("numberTwo")
                    print(contact.phoneNumbers)
                    let numbers = contact.phoneNumbers.first
                    print((numbers?.value)?.stringValue ?? "")
                    
-                   self.lblNumber.text = " Contact No. \((numbers?.value)?.stringValue ?? "")"
-                   
+                   self.numberTwo.text = " Contact No. \((numbers?.value)?.stringValue ?? "")"
                    
                }
               func contactPickerDid(_ picker: CNContactPickerViewController) {
                    self.dismiss(animated: true, completion: nil)
         
     }
-    
+    // ------------------------------------------------
     
     @IBOutlet weak var numberthree: UILabel!
-    
     @IBAction func contact3(_ sender: Any) {
         let contacVC = CNContactPickerViewController()
                              contacVC.delegate = self
                              self.present(contacVC, animated: true, completion: nil)
                   }
                   
-                   // MARK: Delegate method CNContectPickerDelegate
-                     func contactPickerThree(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
+    private func contactPickerThree(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
                           print(contact.phoneNumbers)
                           let numbers = contact.phoneNumbers.first
                           print((numbers?.value)?.stringValue ?? "")
                           
-                          self.lblNumber.text = " Contact No. \((numbers?.value)?.stringValue ?? "")"
-                          
-                          
+                          self.numberthree.text = " Contact No. \((numbers?.value)?.stringValue ?? "")"
+                        
                       }
                      func contactPickerHi(_ picker: CNContactPickerViewController) {
                           self.dismiss(animated: true, completion: nil)
