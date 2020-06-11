@@ -10,17 +10,26 @@ import UIKit
 
 class ResourcesViewController: UIViewController {
 
-    @IBOutlet weak var link: UITextView!
+    @IBOutlet weak var testsLink: UITextView!
     
     override func viewDidLoad() {
-        link.dataDetectorTypes = UIDataDetectorTypes.link
-        link.isEditable = false
+        testsLink.dataDetectorTypes = UIDataDetectorTypes.link
+        testsLink.isEditable = false
         planLink.dataDetectorTypes = UIDataDetectorTypes.link
         planLink.isEditable = false
+        appleMusicLink.dataDetectorTypes = UIDataDetectorTypes.link
+        appleMusicLink.isEditable = false
         super.viewDidLoad()
+        spotifyMusicLink.dataDetectorTypes = UIDataDetectorTypes.link
+        spotifyMusicLink.isEditable = false
+        meditationLink.dataDetectorTypes = UIDataDetectorTypes.link
+        meditationLink.isEditable = false
     }
   
     @IBOutlet weak var planLink: UITextView!
+    @IBOutlet weak var appleMusicLink: UITextView!
+    @IBOutlet weak var spotifyMusicLink: UITextView!
+    @IBOutlet weak var meditationLink: UITextView!
     
     
     /*
