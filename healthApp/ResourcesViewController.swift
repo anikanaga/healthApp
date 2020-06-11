@@ -15,9 +15,14 @@ class ResourcesViewController: UIViewController {
     override func viewDidLoad() {
         link.dataDetectorTypes = UIDataDetectorTypes.link
         link.isEditable = false
+        planLink.dataDetectorTypes = UIDataDetectorTypes.link
+        planLink.isEditable = false
         super.viewDidLoad()
     }
   
+    @IBOutlet weak var planLink: UITextView!
+    
+    
     /*
     // MARK: - Navigation
 
