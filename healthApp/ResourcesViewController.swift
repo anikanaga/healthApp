@@ -10,12 +10,13 @@ import UIKit
 
 class ResourcesViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+    @IBOutlet weak var link: UITextView!
     
+    override func viewDidLoad() {
+        link.dataDetectorTypes = UIDataDetectorTypes.link
+        link.isEditable = false
+        super.viewDidLoad()
+    }
   
     /*
     // MARK: - Navigation

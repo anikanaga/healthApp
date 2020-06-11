@@ -134,9 +134,10 @@
         <!--Resources-->
         <scene sceneID="bDf-Zt-0CI">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3XZ-UT-5S1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController title="Resources" id="7Qw-wN-2vG" customClass="ResourcesViewController" customModule="healthApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8wK-T9-tJi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resources" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNZ-6q-GT1">
@@ -147,7 +148,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m37-cu-PNx">
-                                <rect key="frame" x="68" y="341" width="104" height="80"/>
+                                <rect key="frame" x="196" y="501" width="104" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
@@ -172,18 +173,26 @@
                                 <rect key="frame" x="82" y="171" width="250" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="https://screening.mhanational.org/screening-tools"/>
-                                <connections>
-                                    <action selector="testsLink:" destination="7Qw-wN-2vG" eventType="touchUpInside" id="7vA-S7-Zdw"/>
-                                </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="https://screening.mhanational.org/screening-tools" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MvF-3Q-jA5">
+                                <rect key="frame" x="82" y="205" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.78498321370000002" green="0.91317713440000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="00v-8V-yHR"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Resources" image="book.fill" catalog="system" id="N95-zR-O9G"/>
                     <navigationItem key="navigationItem" id="gJ5-te-kGQ"/>
+                    <connections>
+                        <outlet property="link" destination="MvF-3Q-jA5" id="owE-vx-S9m"/>
+                        <outlet property="sample" destination="8wK-T9-tJi" id="5v7-vK-MYs"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3XZ-UT-5S1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="847.82608695652175" y="799.55357142857144"/>
         </scene>
@@ -297,6 +306,36 @@ Available: 24/7</string>
                                     <action selector="callNSPL:" destination="fuh-d4-z92" eventType="touchUpInside" id="cKt-zb-Lqx"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8YS-EU-2Oy">
+                                <rect key="frame" x="36" y="591" width="211" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="contact2:" destination="fuh-d4-z92" eventType="touchUpInside" id="X6Y-Zf-CUk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="voO-iS-Xci">
+                                <rect key="frame" x="36" y="649" width="309" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIx-ZU-Js5">
+                                <rect key="frame" x="36" y="700" width="211" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="contact3:" destination="fuh-d4-z92" eventType="touchUpInside" id="zhT-2Q-iAL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aml-Uf-mHQ">
+                                <rect key="frame" x="36" y="758" width="309" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.78498321370000002" green="0.91317713440000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Oy9-ox-MiN"/>
@@ -304,7 +343,9 @@ Available: 24/7</string>
                     <tabBarItem key="tabBarItem" title="Contacts" image="phone.fill" catalog="system" id="p6q-4P-jVZ"/>
                     <navigationItem key="navigationItem" id="c6o-nS-I7q"/>
                     <connections>
-                        <outlet property="lblNumber" destination="226-aV-ijg" id="OF3-oL-L4B"/>
+                        <outlet property="lblNumber" destination="voO-iS-Xci" id="E7D-8X-aH5"/>
+                        <outlet property="numberTwo" destination="voO-iS-Xci" id="XUb-V2-xae"/>
+                        <outlet property="numberthree" destination="Aml-Uf-mHQ" id="T2g-1U-oSo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l2k-fy-IJ6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -314,7 +355,7 @@ Available: 24/7</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="qZg-el-n8D"/>
-        <segue reference="r0r-N5-M4b"/>
+        <segue reference="p2Q-T4-z8Q"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="book.fill" catalog="system" width="128" height="100"/>
