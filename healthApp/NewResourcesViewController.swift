@@ -1,16 +1,18 @@
 //
-//  ResourcesViewController.swift
+//  NewResourcesViewController.swift
 //  healthApp
 //
-//  Created by Karla Rodriguez on 6/9/20.
+//  Created by Karla Rodriguez on 6/11/20.
 //  Copyright © 2020 Anika Naga. All rights reserved.
 //
 
 import UIKit
 
-class ResourcesViewController: UIViewController {
+class NewResourcesViewController: UIViewController {
 
     @IBOutlet weak var testsLink: UITextView!
+    @IBOutlet weak var planLink: UITextView!
+    @IBOutlet weak var appleMusicLink: UITextView!
     
     override func viewDidLoad() {
         testsLink.dataDetectorTypes = UIDataDetectorTypes.link
@@ -20,18 +22,11 @@ class ResourcesViewController: UIViewController {
         appleMusicLink.dataDetectorTypes = UIDataDetectorTypes.link
         appleMusicLink.isEditable = false
         super.viewDidLoad()
-        spotifyMusicLink.dataDetectorTypes = UIDataDetectorTypes.link
-        spotifyMusicLink.isEditable = false
-        meditationLink.dataDetectorTypes = UIDataDetectorTypes.link
-        meditationLink.isEditable = false
+
+        // Do any additional setup after loading the view.
     }
-  
-    @IBOutlet weak var planLink: UITextView!
-    @IBOutlet weak var appleMusicLink: UITextView!
-    @IBOutlet weak var spotifyMusicLink: UITextView!
-    @IBOutlet weak var meditationLink: UITextView!
     
-    
+
     /*
     // MARK: - Navigation
 
