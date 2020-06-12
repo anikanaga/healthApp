@@ -21,34 +21,35 @@
                                 <color key="textColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPD-Mj-Ltg">
-                                <rect key="frame" x="73" y="489" width="268" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="jeu-Mo-jYf"/>
-                                </constraints>
-                                <state key="normal" title="💙" image="Mental-Health-Word-Cloud"/>
-                                <connections>
-                                    <action selector="factPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="usN-SO-szK"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Together we can Tackle the stigma around mental illness&quot;  " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROj-8S-l32">
                                 <rect key="frame" x="41" y="341" width="332" height="114.5"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
                                 <color key="textColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPD-Mj-Ltg">
+                                <rect key="frame" x="73" y="463" width="268" height="275"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="275" id="13c-hY-Quc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" image="Untitled design-1"/>
+                                <connections>
+                                    <action selector="factPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="usN-SO-szK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.78431372549019607" green="0.9137254901960784" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fOc-Cu-cDn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="B3u-tT-1oQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MPD-Mj-Ltg" secondAttribute="trailing" constant="73" id="OfY-DV-YOU"/>
+                            <constraint firstItem="MPD-Mj-Ltg" firstAttribute="centerX" secondItem="ROj-8S-l32" secondAttribute="centerX" id="CrE-mP-L4c"/>
+                            <constraint firstItem="MPD-Mj-Ltg" firstAttribute="top" secondItem="ROj-8S-l32" secondAttribute="bottom" constant="7.5" id="MJc-dJ-gW4"/>
+                            <constraint firstItem="MPD-Mj-Ltg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="ODG-eL-ZF7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ROj-8S-l32" secondAttribute="trailing" constant="41" id="RgR-f5-2jJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fOc-Cu-cDn" secondAttribute="trailing" constant="41" id="cel-oS-nA4"/>
                             <constraint firstItem="ROj-8S-l32" firstAttribute="top" secondItem="fOc-Cu-cDn" secondAttribute="bottom" constant="25" id="dIS-zD-cCG"/>
                             <constraint firstItem="ROj-8S-l32" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="egJ-og-IWh"/>
-                            <constraint firstItem="MPD-Mj-Ltg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="lsF-L2-3Q0"/>
                             <constraint firstItem="fOc-Cu-cDn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="142" id="toP-CQ-hGj"/>
-                            <constraint firstItem="MPD-Mj-Ltg" firstAttribute="top" secondItem="ROj-8S-l32" secondAttribute="bottom" constant="33.5" id="x2L-AL-tL3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -304,9 +305,9 @@ Music</string>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ep-DK-Iuk">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="1738"/>
-                                                <mutableString key="text">Get Informed On  Anxiety  Anxiety disorders are the most common mental illness in the U.S., affecting 40 million adults in the United States age 18 and older, or 18.1% of the population every year.   Anxiety disorders are highly treatable, yet only 36.9% of those suffering receive treatment. 
+                                                <string key="text">Get Informed On  Anxiety  Anxiety disorders are the most common mental illness in the U.S., affecting 40 million adults in the United States age 18 and older, or 18.1% of the population every year.   Anxiety disorders are highly treatable, yet only 36.9% of those suffering receive treatment. 
 Anxiety is a feeling of unease, fear, or worry that something bad is about to happen, is a part of everyday life. 
-                                                         </mutableString>
+                                                         </string>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
                                                 <color key="textColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -519,7 +520,7 @@ Available: 24/7</string>
         <segue reference="hYG-jf-slO"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="Mental-Health-Word-Cloud" width="600" height="600"/>
+        <image name="Untitled design-1" width="1296" height="1728"/>
         <image name="book.fill" catalog="system" width="128" height="100"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="link" catalog="system" width="128" height="116"/>
