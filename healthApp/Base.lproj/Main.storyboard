@@ -15,31 +15,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tackle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOc-Cu-cDn">
-                                <rect key="frame" x="85" y="186" width="244" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="80"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tackle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOc-Cu-cDn">
+                                <rect key="frame" x="41" y="186" width="332" height="130"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="100"/>
                                 <color key="textColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;Together we can Tackle the stigma around mental illness&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROj-8S-l32">
-                                <rect key="frame" x="41" y="350" width="333" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="22"/>
-                                <color key="textColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPD-Mj-Ltg">
-                                <rect key="frame" x="85" y="488" width="246" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="100"/>
-                                <state key="normal" title="💙"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPD-Mj-Ltg">
+                                <rect key="frame" x="73" y="489" width="268" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="jeu-Mo-jYf"/>
+                                </constraints>
+                                <state key="normal" title="💙" image="Mental-Health-Word-Cloud"/>
                                 <connections>
                                     <action selector="factPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="usN-SO-szK"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Together we can Tackle the stigma around mental illness&quot;  " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROj-8S-l32">
+                                <rect key="frame" x="41" y="341" width="332" height="114.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
+                                <color key="textColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.78431372549019607" green="0.9137254901960784" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fOc-Cu-cDn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="B3u-tT-1oQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MPD-Mj-Ltg" secondAttribute="trailing" constant="73" id="OfY-DV-YOU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ROj-8S-l32" secondAttribute="trailing" constant="41" id="RgR-f5-2jJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fOc-Cu-cDn" secondAttribute="trailing" constant="41" id="cel-oS-nA4"/>
+                            <constraint firstItem="ROj-8S-l32" firstAttribute="top" secondItem="fOc-Cu-cDn" secondAttribute="bottom" constant="25" id="dIS-zD-cCG"/>
+                            <constraint firstItem="ROj-8S-l32" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="egJ-og-IWh"/>
+                            <constraint firstItem="MPD-Mj-Ltg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="lsF-L2-3Q0"/>
+                            <constraint firstItem="fOc-Cu-cDn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="142" id="toP-CQ-hGj"/>
+                            <constraint firstItem="MPD-Mj-Ltg" firstAttribute="top" secondItem="ROj-8S-l32" secondAttribute="bottom" constant="33.5" id="x2L-AL-tL3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="WSn-ym-50v"/>
@@ -59,10 +69,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99Z-rG-6cf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99Z-rG-6cf">
                                 <rect key="frame" x="36" y="189" width="342" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="3TV-vl-2Ky"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
                                 <state key="normal" title="Access non-professional resources">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -71,19 +83,23 @@
                                     <segue destination="rLr-OF-8Yk" kind="show" id="hYG-jf-slO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12P-zl-QKl">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12P-zl-QKl">
                                 <rect key="frame" x="36" y="372" width="342" height="141"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
                                 <state key="normal" title="Get informed">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="26l-3c-DT3" kind="show" id="g6Z-8D-Zoa"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMe-XB-66e">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMe-XB-66e">
                                 <rect key="frame" x="36" y="546" width="342" height="127"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="127" id="MCx-UK-eFd"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                 <state key="normal" title="Contact a professional or help center">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -98,9 +114,8 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items/>
                             </tabBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where do you want to start?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJw-Ip-ahq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where do you want to start?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJw-Ip-ahq">
                                 <rect key="frame" x="3" y="80" width="408" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="34"/>
                                 <color key="textColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -108,6 +123,23 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.78498321370000002" green="0.91317713440000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="12P-zl-QKl" firstAttribute="leading" secondItem="m8S-2s-GaL" secondAttribute="leading" constant="36" id="5Gk-x8-KJt"/>
+                            <constraint firstItem="99Z-rG-6cf" firstAttribute="centerX" secondItem="GJw-Ip-ahq" secondAttribute="centerX" id="9NY-u8-rCW"/>
+                            <constraint firstItem="99Z-rG-6cf" firstAttribute="top" secondItem="GJw-Ip-ahq" secondAttribute="bottom" constant="72" id="9WS-ea-HkO"/>
+                            <constraint firstItem="99Z-rG-6cf" firstAttribute="trailing" secondItem="12P-zl-QKl" secondAttribute="trailing" id="Cbi-kg-6NR"/>
+                            <constraint firstItem="99Z-rG-6cf" firstAttribute="trailing" secondItem="kMe-XB-66e" secondAttribute="trailing" id="HHr-o6-YdL"/>
+                            <constraint firstItem="kMe-XB-66e" firstAttribute="top" secondItem="12P-zl-QKl" secondAttribute="bottom" constant="33" id="Off-Oj-7Ip"/>
+                            <constraint firstItem="99Z-rG-6cf" firstAttribute="leading" secondItem="12P-zl-QKl" secondAttribute="leading" id="RS2-F5-vp4"/>
+                            <constraint firstItem="m8S-2s-GaL" firstAttribute="trailing" secondItem="GJw-Ip-ahq" secondAttribute="trailing" constant="3" id="SzA-9O-GFj"/>
+                            <constraint firstItem="m8S-2s-GaL" firstAttribute="trailing" secondItem="12P-zl-QKl" secondAttribute="trailing" constant="36" id="Xhh-eF-Kko"/>
+                            <constraint firstItem="99Z-rG-6cf" firstAttribute="leading" secondItem="kMe-XB-66e" secondAttribute="leading" id="ePj-lo-uDr"/>
+                            <constraint firstItem="12P-zl-QKl" firstAttribute="top" secondItem="99Z-rG-6cf" secondAttribute="bottom" constant="47" id="f1x-Ba-oBt"/>
+                            <constraint firstItem="GJw-Ip-ahq" firstAttribute="top" secondItem="m8S-2s-GaL" secondAttribute="top" constant="36" id="hEe-JZ-M78"/>
+                            <constraint firstAttribute="bottom" secondItem="kMe-XB-66e" secondAttribute="bottom" constant="223" id="knE-xG-Lui"/>
+                            <constraint firstItem="99Z-rG-6cf" firstAttribute="leading" secondItem="m8S-2s-GaL" secondAttribute="leading" constant="36" id="u7A-Fd-oH7"/>
+                            <constraint firstItem="GJw-Ip-ahq" firstAttribute="leading" secondItem="m8S-2s-GaL" secondAttribute="leading" constant="3" id="xx9-72-EBL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="m8S-2s-GaL"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Let's Start" image="star.fill" catalog="system" id="kpZ-Tj-oV1"/>
@@ -131,18 +163,19 @@
                         <segue destination="W28-hK-Tnr" kind="relationship" relationship="viewControllers" id="aAY-bO-LaK"/>
                         <segue destination="rLr-OF-8Yk" kind="relationship" relationship="viewControllers" id="cOx-C8-lK0"/>
                         <segue destination="fuh-d4-z92" kind="relationship" relationship="viewControllers" id="3wX-IW-Tyq"/>
+                        <segue destination="26l-3c-DT3" kind="relationship" relationship="viewControllers" id="GTU-le-S8L"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B53-Sh-jAJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-514" y="800"/>
+            <point key="canvasLocation" x="94" y="844"/>
         </scene>
         <!--Resources-->
         <scene sceneID="H2Q-3F-DBM">
             <objects>
                 <viewController id="rLr-OF-8Yk" customClass="NewResourcesViewController" customModule="healthApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="49w-24-m2H">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRg-gS-I1C">
@@ -243,7 +276,7 @@ Music</string>
                         <color key="backgroundColor" red="0.7843137255" green="0.91372549020000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="zNg-SK-Chs"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Resources" image="book.fill" catalog="system" id="bq6-Jr-T5X"/>
+                    <tabBarItem key="tabBarItem" title="Resources" image="link" catalog="system" id="bq6-Jr-T5X"/>
                     <navigationItem key="navigationItem" id="ewM-TC-1G2"/>
                     <connections>
                         <outlet property="appleMusicLink" destination="pZI-Le-Im8" id="Vwb-TC-E4K"/>
@@ -255,12 +288,65 @@ Music</string>
             </objects>
             <point key="canvasLocation" x="850.72463768115949" y="844.41964285714278"/>
         </scene>
+        <!--Learn-->
+        <scene sceneID="qB1-by-RIy">
+            <objects>
+                <viewController id="26l-3c-DT3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gWz-k4-wxa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7nn-xl-sL6">
+                                <rect key="frame" x="20" y="0.0" width="374" height="842"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oOA-Zo-bEM">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="1738"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ep-DK-Iuk">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="1738"/>
+                                                <mutableString key="text">Get Informed On  Anxiety  Anxiety disorders are the most common mental illness in the U.S., affecting 40 million adults in the United States age 18 and older, or 18.1% of the population every year.   Anxiety disorders are highly treatable, yet only 36.9% of those suffering receive treatment. 
+Anxiety is a feeling of unease, fear, or worry that something bad is about to happen, is a part of everyday life. 
+                                                         </mutableString>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
+                                                <color key="textColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="oOA-Zo-bEM" firstAttribute="bottom" secondItem="OPE-9k-wPd" secondAttribute="bottom" id="HA9-U1-UgX"/>
+                                    <constraint firstItem="oOA-Zo-bEM" firstAttribute="trailing" secondItem="OPE-9k-wPd" secondAttribute="trailing" id="IhV-xu-Hf1"/>
+                                    <constraint firstItem="oOA-Zo-bEM" firstAttribute="width" secondItem="xXI-ms-VNZ" secondAttribute="width" id="Lgo-Hw-iTe"/>
+                                    <constraint firstItem="oOA-Zo-bEM" firstAttribute="leading" secondItem="OPE-9k-wPd" secondAttribute="leading" id="Qri-SO-61f"/>
+                                    <constraint firstItem="oOA-Zo-bEM" firstAttribute="top" secondItem="OPE-9k-wPd" secondAttribute="top" id="jlr-z4-y8N"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="OPE-9k-wPd"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="xXI-ms-VNZ"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7843137255" green="0.91372549020000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7nn-xl-sL6" firstAttribute="top" secondItem="Iks-eK-rcS" secondAttribute="top" id="8K2-L3-9Zs"/>
+                            <constraint firstAttribute="bottom" secondItem="7nn-xl-sL6" secondAttribute="bottom" id="NDa-eR-QLX"/>
+                            <constraint firstItem="7nn-xl-sL6" firstAttribute="leading" secondItem="Iks-eK-rcS" secondAttribute="leading" constant="20" id="Vgc-K3-Ubf"/>
+                            <constraint firstItem="7nn-xl-sL6" firstAttribute="trailing" secondItem="Iks-eK-rcS" secondAttribute="trailing" constant="-20" id="rJg-Tn-dAq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Iks-eK-rcS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Learn" image="book.fill" catalog="system" id="Kvf-9Q-zP5"/>
+                    <navigationItem key="navigationItem" id="cKt-zI-fGM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MgX-i8-4ME" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1642" y="844"/>
+        </scene>
         <!--Contact -->
         <scene sceneID="8ms-if-LO5">
             <objects>
                 <viewController title="Contact " id="fuh-d4-z92" customClass="ContactsViewController" customModule="healthApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t89-41-kPb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact Professionals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCJ-e0-axu">
@@ -271,7 +357,7 @@ Music</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AXa-c3-DDJ">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="759" width="414" height="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items/>
@@ -341,7 +427,7 @@ Available: 24/7</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Your 3 Emercency Contacts" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hf-23-t6n">
-                                <rect key="frame" x="25" y="417" width="365" height="34"/>
+                                <rect key="frame" x="24.5" y="417" width="365" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="26"/>
                                 <color key="textColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -428,12 +514,15 @@ Available: 24/7</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3wX-IW-Tyq"/>
-        <segue reference="cOx-C8-lK0"/>
+        <segue reference="QAT-1P-NDN"/>
+        <segue reference="g6Z-8D-Zoa"/>
+        <segue reference="hYG-jf-slO"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Mental-Health-Word-Cloud" width="600" height="600"/>
         <image name="book.fill" catalog="system" width="128" height="100"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="link" catalog="system" width="128" height="116"/>
         <image name="phone.fill" catalog="system" width="128" height="114"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
     </resources>
