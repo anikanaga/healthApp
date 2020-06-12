@@ -427,8 +427,8 @@ Available: 24/7</string>
                                     <action selector="oneTapped:" destination="fuh-d4-z92" eventType="touchUpInside" id="x6Q-1Z-OKo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Your 3 Emercency Contacts" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hf-23-t6n">
-                                <rect key="frame" x="24.5" y="417" width="365" height="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Your 3 Emergency Contacts" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hf-23-t6n">
+                                <rect key="frame" x="24.5" y="417" width="366" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="26"/>
                                 <color key="textColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
