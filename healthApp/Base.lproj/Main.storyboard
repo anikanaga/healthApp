@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pL2-0f-FCL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pL2-0f-FCL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Homepage-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Homepage" id="BYZ-38-t0r" customClass="ViewController" customModule="healthApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Homepage" id="BYZ-38-t0r" customClass="ViewController" customModule="Tackle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,6 +41,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.78431372549019607" green="0.9137254901960784" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fOc-Cu-cDn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="B3u-tT-1oQ"/>
@@ -51,12 +54,8 @@
                             <constraint firstItem="ROj-8S-l32" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="egJ-og-IWh"/>
                             <constraint firstItem="fOc-Cu-cDn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="142" id="toP-CQ-hGj"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="WSn-ym-50v"/>
-                    <connections>
-                        <outlet property="new" destination="ROj-8S-l32" id="h71-RA-ZPP"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,12 +64,12 @@
         <!--Let's Get Started-->
         <scene sceneID="LLn-F1-1hD">
             <objects>
-                <viewController title="Let's Get Started" id="W28-hK-Tnr" customClass="HomeViewController" customModule="healthApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Let's Get Started" id="W28-hK-Tnr" customClass="HomeViewController" customModule="Tackle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AYc-KD-FCK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99Z-rG-6cf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99Z-rG-6cf">
                                 <rect key="frame" x="36" y="189" width="342" height="136"/>
                                 <color key="backgroundColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -84,7 +83,7 @@
                                     <segue destination="rLr-OF-8Yk" kind="show" id="hYG-jf-slO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12P-zl-QKl">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12P-zl-QKl">
                                 <rect key="frame" x="36" y="372" width="342" height="141"/>
                                 <color key="backgroundColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
@@ -95,7 +94,7 @@
                                     <segue destination="26l-3c-DT3" kind="show" id="g6Z-8D-Zoa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMe-XB-66e">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMe-XB-66e">
                                 <rect key="frame" x="36" y="546" width="342" height="127"/>
                                 <color key="backgroundColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -123,6 +122,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="m8S-2s-GaL"/>
                         <color key="backgroundColor" red="0.78498321370000002" green="0.91317713440000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="12P-zl-QKl" firstAttribute="leading" secondItem="m8S-2s-GaL" secondAttribute="leading" constant="36" id="5Gk-x8-KJt"/>
@@ -141,7 +141,6 @@
                             <constraint firstItem="99Z-rG-6cf" firstAttribute="leading" secondItem="m8S-2s-GaL" secondAttribute="leading" constant="36" id="u7A-Fd-oH7"/>
                             <constraint firstItem="GJw-Ip-ahq" firstAttribute="leading" secondItem="m8S-2s-GaL" secondAttribute="leading" constant="3" id="xx9-72-EBL"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="m8S-2s-GaL"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Let's Start" image="star.fill" catalog="system" id="kpZ-Tj-oV1"/>
                     <navigationItem key="navigationItem" id="Lqr-aI-A5d"/>
@@ -157,7 +156,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CoM-RL-tbC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="XNj-tN-wj4"/>
@@ -174,7 +173,7 @@
         <!--Resources-->
         <scene sceneID="H2Q-3F-DBM">
             <objects>
-                <viewController id="rLr-OF-8Yk" customClass="NewResourcesViewController" customModule="healthApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rLr-OF-8Yk" customClass="NewResourcesViewController" customModule="Tackle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="49w-24-m2H">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -188,102 +187,55 @@
                                 <color key="textColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mental Health Tests" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZT-HW-siz">
-                                <rect key="frame" x="55" y="177" width="304" height="85"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZU-IV-WT8">
+                                <rect key="frame" x="32" y="181" width="351" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Py8-c4-E4S">
-                                <rect key="frame" x="55" y="257" width="304" height="35"/>
+                                <color key="backgroundColor" red="0.3058823645" green="0.52549022440000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <state key="normal" title="Mental Health Tests ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tests:" destination="rLr-OF-8Yk" eventType="touchUpInside" id="J2c-Zk-yDv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5w-H2-8fa">
+                                <rect key="frame" x="32" y="225" width="351" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <string key="text">For a non-professional diagnosis
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="https://screening.mhanational.org/screening-tools" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MvF-3Q-jA5">
-                                <rect key="frame" x="55" y="289" width="304" height="52"/>
+                                <color key="backgroundColor" red="0.3058823645" green="0.52549022440000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                <state key="normal" title="Safety Plan">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMd-aU-Cw4">
+                                <rect key="frame" x="32" y="316" width="351" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.80000000000000004" green="0.90196078430000004" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EO-Q7-i1Q">
-                                <rect key="frame" x="55" y="367" width="304" height="68"/>
+                                <color key="backgroundColor" red="0.3058823645" green="0.52549022440000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                <state key="normal" title="Our Instagram">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b99-43-b0A">
+                                <rect key="frame" x="32" y="269" width="351" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <string key="text">
-Safety Plan</string>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcd-2f-RpA">
-                                <rect key="frame" x="55" y="431" width="304" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <string key="text">Template to fill out for a guide out of a crisis.
-Keep it somewhere accessible so it can be found at any critical point.
-
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="https://suicidepreventionlifeline.org/wp-content/uploads/2017/09/Brown_StanleySafetyPlanTemplate1.pdf" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="y3D-W0-1Pm">
-                                <rect key="frame" x="55" y="506" width="304" height="92"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.80000000000000004" green="0.90196078430000004" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0go-DU-fuk">
-                                <rect key="frame" x="55" y="606" width="304" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <string key="text">
-Music</string>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcj-J0-vYG">
-                                <rect key="frame" x="55" y="660" width="304" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <string key="text">To feel calm and destress.
-
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="https://music.apple.com/us/playlist/a-playlist-to-deal-with-anxiety-morepls/pl.u-vxy6JJBFPvD1yb" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pZI-Le-Im8">
-                                <rect key="frame" x="55" y="707" width="304" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.80000000000000004" green="0.90196078430000004" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <color key="backgroundColor" red="0.3058823645" green="0.52549022440000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                <state key="normal" title="Music">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="music:" destination="rLr-OF-8Yk" eventType="touchUpInside" id="dpi-hf-MHZ"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.7843137255" green="0.91372549020000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="zNg-SK-Chs"/>
+                        <color key="backgroundColor" red="0.7843137255" green="0.91372549020000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Resources" image="link" catalog="system" id="bq6-Jr-T5X"/>
                     <navigationItem key="navigationItem" id="ewM-TC-1G2"/>
-                    <connections>
-                        <outlet property="appleMusicLink" destination="pZI-Le-Im8" id="Vwb-TC-E4K"/>
-                        <outlet property="planLink" destination="y3D-W0-1Pm" id="aV5-Ob-5DB"/>
-                        <outlet property="testsLink" destination="MvF-3Q-jA5" id="L9k-oL-fd9"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TIy-T1-4Am" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -294,11 +246,11 @@ Music</string>
             <objects>
                 <viewController id="26l-3c-DT3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gWz-k4-wxa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7nn-xl-sL6">
-                                <rect key="frame" x="20" y="0.0" width="374" height="842"/>
+                                <rect key="frame" x="20" y="44" width="374" height="852"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oOA-Zo-bEM">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="1738"/>
@@ -326,6 +278,7 @@ Anxiety is a feeling of unease, fear, or worry that something bad is about to ha
                                 <viewLayoutGuide key="frameLayoutGuide" id="xXI-ms-VNZ"/>
                             </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Iks-eK-rcS"/>
                         <color key="backgroundColor" red="0.7843137255" green="0.91372549020000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7nn-xl-sL6" firstAttribute="top" secondItem="Iks-eK-rcS" secondAttribute="top" id="8K2-L3-9Zs"/>
@@ -333,7 +286,6 @@ Anxiety is a feeling of unease, fear, or worry that something bad is about to ha
                             <constraint firstItem="7nn-xl-sL6" firstAttribute="leading" secondItem="Iks-eK-rcS" secondAttribute="leading" constant="20" id="Vgc-K3-Ubf"/>
                             <constraint firstItem="7nn-xl-sL6" firstAttribute="trailing" secondItem="Iks-eK-rcS" secondAttribute="trailing" constant="-20" id="rJg-Tn-dAq"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Iks-eK-rcS"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Learn" image="book.fill" catalog="system" id="Kvf-9Q-zP5"/>
                     <navigationItem key="navigationItem" id="cKt-zI-fGM"/>
@@ -345,7 +297,7 @@ Anxiety is a feeling of unease, fear, or worry that something bad is about to ha
         <!--Contact -->
         <scene sceneID="8ms-if-LO5">
             <objects>
-                <viewController title="Contact " id="fuh-d4-z92" customClass="ContactsViewController" customModule="healthApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Contact " id="fuh-d4-z92" customClass="ContactsViewController" customModule="Tackle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t89-41-kPb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -371,7 +323,7 @@ Anxiety is a feeling of unease, fear, or worry that something bad is about to ha
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmn-Af-TQX">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmn-Af-TQX">
                                 <rect key="frame" x="157" y="144" width="102" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -403,7 +355,7 @@ Available: 24/7</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1S-OK-7oq">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1S-OK-7oq">
                                 <rect key="frame" x="49" y="342" width="316" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -415,7 +367,7 @@ Available: 24/7</string>
                                     <action selector="callSAMHSA:" destination="fuh-d4-z92" eventType="touchUpInside" id="Tf0-Li-iik"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1t-AV-2KP">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1t-AV-2KP">
                                 <rect key="frame" x="79" y="474" width="264" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -434,12 +386,12 @@ Available: 24/7</string>
                                 <color key="textColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0PU-TG-CkA">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0PU-TG-CkA">
                                 <rect key="frame" x="53" y="243" width="316" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
                                 <state key="normal" title="1-800-273-8255">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -447,7 +399,7 @@ Available: 24/7</string>
                                     <action selector="callNSPL:" destination="fuh-d4-z92" eventType="touchUpInside" id="cKt-zb-Lqx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8YS-EU-2Oy">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8YS-EU-2Oy">
                                 <rect key="frame" x="79" y="565" width="264" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -459,7 +411,7 @@ Available: 24/7</string>
                                     <action selector="twoTapped:" destination="fuh-d4-z92" eventType="touchUpInside" id="c51-vv-Eac"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIx-ZU-Js5">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIx-ZU-Js5">
                                 <rect key="frame" x="75" y="663" width="268" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.30435069380000002" green="0.52404024810000005" blue="0.99579674009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -496,8 +448,8 @@ Available: 24/7</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.78498321370000002" green="0.91317713440000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Oy9-ox-MiN"/>
+                        <color key="backgroundColor" red="0.78498321370000002" green="0.91317713440000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Contacts" image="phone.fill" catalog="system" id="p6q-4P-jVZ"/>
                     <navigationItem key="navigationItem" id="c6o-nS-I7q"/>
@@ -516,15 +468,21 @@ Available: 24/7</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="QAT-1P-NDN"/>
-        <segue reference="g6Z-8D-Zoa"/>
+        <segue reference="GTU-le-S8L"/>
         <segue reference="hYG-jf-slO"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Untitled design-1" width="1296" height="1728"/>
-        <image name="book.fill" catalog="system" width="128" height="100"/>
+        <image name="book.fill" catalog="system" width="128" height="102"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="link" catalog="system" width="128" height="116"/>
+        <image name="link" catalog="system" width="128" height="122"/>
         <image name="phone.fill" catalog="system" width="128" height="114"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

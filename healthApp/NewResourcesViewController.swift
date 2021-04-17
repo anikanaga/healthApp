@@ -7,24 +7,27 @@
 //
 
 import UIKit
-
+import SafariServices
 class NewResourcesViewController: UIViewController {
 
-    @IBOutlet weak var testsLink: UITextView!
-    @IBOutlet weak var planLink: UITextView!
-    @IBOutlet weak var appleMusicLink: UITextView!
-    
-    override func viewDidLoad() {
-        testsLink.dataDetectorTypes = UIDataDetectorTypes.link
-        testsLink.isEditable = false
-        planLink.dataDetectorTypes = UIDataDetectorTypes.link
-        planLink.isEditable = false
-        appleMusicLink.dataDetectorTypes = UIDataDetectorTypes.link
-        appleMusicLink.isEditable = false
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBAction func tests(_ sender: UIButton) {
+        let vc = SFSafariViewController(url: URL(string: "https://screening.mhanational.org/screening-tools")!)
+        present(vc, animated: true)
     }
+    
+    @IBAction func safteyPlan(_ sender: UIButton) {
+        let vc = SFSafariViewController(url: URL(string: "https://suicidepreventionlifeline.org/wp-content/uploads/2017/09/Brown_StanleySafetyPlanTemplate1.pdf")!)
+        present(vc, animated: true)
+    }
+    
+    @IBAction func music(_ sender: UIButton) {
+        let vc = SFSafariViewController(url: URL(string: "https://music.apple.com/us/playlist/a-playlist-to-deal-with-anxiety-morepls/pl.u-vxy6JJBFPvD1yb")!)
+        present(vc, animated: true)
+    }
+    
+    }
+    // Do any additional setup after loading the view.
+    
     
 
     /*
@@ -37,4 +40,4 @@ class NewResourcesViewController: UIViewController {
     }
     */
 
-}
+
